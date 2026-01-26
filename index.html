@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gouranga Kalita - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500">
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar-blur fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold gradient-text">GK</h1>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-8">
+                        <a href="#home" class="nav-link hover:text-blue-500 transition-colors duration-300">Home</a>
+                        <a href="#about" class="nav-link hover:text-blue-500 transition-colors duration-300">About</a>
+                        <a href="#experience" class="nav-link hover:text-blue-500 transition-colors duration-300">Experience</a>
+                        <a href="#projects" class="nav-link hover:text-blue-500 transition-colors duration-300">Projects</a>
+                        <a href="#skills" class="nav-link hover:text-blue-500 transition-colors duration-300">Skills</a>
+                        <a href="#contact" class="nav-link hover:text-blue-500 transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <button class="md:hidden text-2xl text-gray-900 dark:text-white p-2" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:hidden hidden bg-white dark:bg-gray-900 border-b dark:border-gray-800" id="mobileMenu">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#home" class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">Home</a>
+                <a href="#about" class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">About</a>
+                <a href="#experience" class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">Experience</a>
+                <a href="#projects" class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">Projects</a>
+                <a href="#skills" class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">Skills</a>
+                <a href="#contact" class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+        <div class="glow-effect absolute inset-0"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center fade-in">
+                <div class="float-animation mb-8">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-2xl ring-4 ring-blue-500 ring-opacity-50">
+                        <img src="assets/PASSPHOTO.jpg" alt="Gouranga Kalita" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <h2 class="text-5xl md:text-7xl font-bold mb-4">
+                    Hi, I'm <span class="gradient-text">Gouranga Kalita</span>
+                </h2>
+                <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8">
+                    Full Stack Developer & Tech Enthusiast
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <a href="#contact" class="magnetic-btn ripple px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-semibold shine-effect shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        Get In Touch
+                    </a>
+                    <a href="#projects" class="magnetic-btn ripple px-8 py-4 border-2 border-blue-500 text-blue-500 dark:text-blue-400 rounded-full font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300">
+                        View Projects
+                    </a>
+                </div>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://linkedin.com/in/gouranga-kalita-6431bb239" target="_blank" class="text-3xl hover:text-blue-500 transform hover:scale-125 transition-all duration-300">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Gouranga123456789" target="_blank" class="text-3xl hover:text-blue-500 transform hover:scale-125 transition-all duration-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:gourangakalita17@gmail.com" class="text-3xl hover:text-blue-500 transform hover:scale-125 transition-all duration-300">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:7086383831" class="text-3xl hover:text-blue-500 transform hover:scale-125 transition-all duration-300">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text fade-in">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl transform rotate-6"></div>
+                        <div class="relative bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-2xl">
+                            <h3 class="text-2xl font-bold mb-4">Education</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="font-semibold text-lg">B.Tech in Computer Science</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Assam University • 2021 - 2025</p>
+                                    <p class="text-blue-500">CGPA: 7.34/10</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Senior Secondary (XII)</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">S.K. Hazarika Senior Secondary School</p>
+                                    <p class="text-blue-500">87.40%</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Higher Secondary (X)</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">St. Vivekananda English Academy</p>
+                                    <p class="text-blue-500">88.16%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                        A passionate B.Tech graduate in Computer Science and Engineering with a solid foundation in web development and emerging technologies. I specialize in creating responsive, user-centric web applications that combine aesthetics with functionality.
+                    </p>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                        My expertise spans across modern web technologies including React, PHP, MySQL, and various frontend frameworks. I'm constantly exploring new tools and methodologies to deliver scalable and efficient solutions.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-blue-500 bg-opacity-20 text-blue-500 rounded-full text-sm font-semibold">Web Development</span>
+                        <span class="px-4 py-2 bg-purple-500 bg-opacity-20 text-purple-500 rounded-full text-sm font-semibold">C++</span>
+                        <span class="px-4 py-2 bg-pink-500 bg-opacity-20 text-pink-500 rounded-full text-sm font-semibold">Python</span>
+                        <span class="px-4 py-2 bg-violet-500 bg-opacity-20 text-violet-500 rounded-full text-sm font-semibold">Java</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50 dark:bg-gray-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text fade-in">Experience</h2>
+            <div class="space-y-12">
+                <!-- Experience Item 1 -->
+                <div class="fade-in card-3d bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-xl relative pl-12">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Full Stack Development Intern</h3>
+                            <p class="text-blue-500 font-semibold">Main Flow Services And Technologies Pvt. Limited</p>
+                        </div>
+                        <span class="text-gray-600 dark:text-gray-400 text-sm mt-2 md:mt-0">Jun 2024 – Aug 2024</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Crafted a responsive web application for cat blogs with secure authentication, receiving positive feedback for design and functionality</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Delivered a calculator application with responsive design and history panel, reducing user errors through 5 testing sessions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Deployed a to-do list application improving team organization and task management by 15%</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="fade-in card-3d bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-xl relative pl-12">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Operations Intern</h3>
+                            <p class="text-blue-500 font-semibold">Nblik</p>
+                        </div>
+                        <span class="text-gray-600 dark:text-gray-400 text-sm mt-2 md:mt-0">Mar 2023</span>
+                    </div>
+                    <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Revitalized community forum generating 200+ new user registrations and improving monthly active users by 12%</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Collaborated cross-functionally to implement improvements that increased platform engagement by 21%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text fade-in">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="fade-in card-3d bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl shine-effect">
+                    <a href="https://cats-blog.lovestoblog.com/" target="_blank" class="block fade-in card-3d bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl shine-effect hover:no-underline transition-all duration-300">
+                        <div class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+                            <i class="fas fa-cat text-white text-6xl"></i>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Cat Blogs Website</h3>
+                            <p class="text-gray-700 dark:text-gray-300 mb-6">
+                                A responsive single-page application with secure authentication for user registration and post creation. Developed using React (Vite), Tailwind CSS, PHP, and MySQL.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">React</span>
+                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">Tailwind CSS</span>
+                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">PHP</span>
+                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">MySQL</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="fade-in card-3d bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl shine-effect">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-white text-6xl"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4">Building Energy Management</h3>
+                        <p class="text-gray-700 dark:text-gray-300 mb-6">
+                             IoT prototype using IR, LDR, and DHT11 sensors with ESP8266 microcontroller. Integrated ML models to track and predict energy consumption patterns.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">IoT</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">Machine Learning</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">ESP8266</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text fade-in">Skills & Expertise</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Technical Skills -->
+                <div class="fade-in">
+                    <h3 class="text-2xl font-bold mb-8 flex items-center">
+                        <i class="fas fa-code text-blue-500 mr-3"></i>
+                        Technical Skills
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">HTML & CSS</span>
+                                <span class="text-blue-500">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" style="transform: scaleX(0.95);" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">JavaScript</span>
+                                <span class="text-blue-500">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" style="transform: scaleX(0.90);" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">React</span>
+                                <span class="text-blue-500">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" style="transform: scaleX(0.85);" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">PHP & MySQL</span>
+                                <span class="text-blue-500">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" style="transform: scaleX(0.80);" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Python</span>
+                                <span class="text-blue-500">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" style="transform: scaleX(0.75);" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">C++</span>
+                                <span class="text-blue-500">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" style="transform: scaleX(0.70);" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">Java</span>
+                                <span class="text-blue-500">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill" style="transform: scaleX(0.65);" data-width="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="fade-in">
+                    <h3 class="text-2xl font-bold mb-8 flex items-center">
+                        <i class="fas fa-users text-purple-500 mr-3"></i>
+                        Soft Skills
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="card-3d bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg text-center shine-effect">
+                            <i class="fas fa-brain text-4xl text-blue-500 mb-3"></i>
+                            <h4 class="font-semibold">Logical Reasoning</h4>
+                        </div>
+                        <div class="card-3d bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg text-center shine-effect">
+                            <i class="fas fa-handshake text-4xl text-purple-500 mb-3"></i>
+                            <h4 class="font-semibold">Team Work</h4>
+                        </div>
+                        <div class="card-3d bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg text-center shine-effect">
+                            <i class="fas fa-comments text-4xl text-pink-500 mb-3"></i>
+                            <h4 class="font-semibold">Communication</h4>
+                        </div>
+                        <div class="card-3d bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg text-center shine-effect">
+                            <i class="fas fa-lightbulb text-4xl text-yellow-500 mb-3"></i>
+                            <h4 class="font-semibold">Problem Solving</h4>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <h4 class="text-xl font-bold mb-4">Certifications</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center p-4 bg-white dark:bg-gray-900 rounded-lg shadow">
+                                <i class="fas fa-certificate text-blue-500 text-2xl mr-4"></i>
+                                <div>
+                                    <p class="font-semibold">Certificate of Merit</p>
+                                    <p class="text-sm text-gray-600 dark:text-gray-400">Naukri Campus Young Turks '25</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center p-4 bg-white dark:bg-gray-900 rounded-lg shadow">
+                                <i class="fas fa-certificate text-purple-500 text-2xl mr-4"></i>
+                                <div>
+                                    <p class="font-semibold">Full Stack Development</p>
+                                    <p class="text-sm text-gray-600 dark:text-gray-400">Main Flow Services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text fade-in">Get In Touch</h2>
+            <div class="fade-in card-3d bg-white dark:bg-gray-800 rounded-2xl p-6 md:p-8 shadow-2xl">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-900 rounded-xl min-w-0">
+                        <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-white"></i>
+                        </div>
+                        <div class="truncate">
+                            <p class="font-semibold text-sm">Email</p>
+                            <p class="text-xs text-gray-400 truncate">gourangakalita17@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-900 rounded-xl">
+                        <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-sm">Phone</p>
+                            <p class="text-xs text-gray-400">+91 7086383831</p>
+                        </div>
+                    </div>
+                    </div>
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <input type="text" class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-700 rounded-lg" placeholder="Your Name">
+                        <input type="email" class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-700 rounded-lg" placeholder="Email">
+                    </div>
+                    <textarea rows="4" class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-700 rounded-lg" placeholder="Message"></textarea>
+                    <button type="submit" class="w-full py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-bold">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold gradient-text">Gouranga Kalita</h3>
+                    <p class="text-gray-400 mt-2">Full Stack Developer & Tech Enthusiast</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://linkedin.com/in/gouranga-kalita-6431bb239" target="_blank" class="text-2xl hover:text-blue-500 transform hover:scale-125 transition-all duration-300">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Gouranga123456789" target="_blank" class="text-2xl hover:text-blue-500 transform hover:scale-125 transition-all duration-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:gourangakalita17@gmail.com" class="text-2xl hover:text-blue-500 transform hover:scale-125 transition-all duration-300">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Gouranga Kalita. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+     <script src="script.js"></script>
+</body>
+</html>
