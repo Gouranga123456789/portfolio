@@ -178,3 +178,22 @@ magneticBtns.forEach(btn => {
         btn.style.transform = 'translate(0, 0)';
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    if (urlParams.get('success') === '1') {
+        setTimeout(() => {
+            alert('✅ Thank you! Your message has been received successfully.');
+        }, 500);   
+        
+        window.history.replaceState({}, document.title, window.location.pathname);
+    } 
+    else if (urlParams.get('error')) {
+        setTimeout(() => {
+            alert('⚠️ Failed to send message. Please try again later.');
+        }, 500);
+        
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
+});
