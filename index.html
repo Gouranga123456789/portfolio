@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gouranga Kalita - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500">
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar-blur fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold gradient-text">GK</h1>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-8">
+                        <a href="#home" class="nav-link hover:text-blue-500 transition-colors duration-300">Home</a>
+                        <a href="#about" class="nav-link hover:text-blue-500 transition-colors duration-300">About</a>
+                        <a href="#experience" class="nav-link hover:text-blue-500 transition-colors duration-300">Experience</a>
+                        <a href="#projects" class="nav-link hover:text-blue-500 transition-colors duration-300">Projects</a>
+                        <a href="#skills" class="nav-link hover:text-blue-500 transition-colors duration-300">Skills</a>
+                        <a href="#contact" class="nav-link hover:text-blue-500 transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <button class="md:hidden text-2xl text-gray-900 dark:text-white p-2" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:hidden hidden bg-white dark:bg-gray-900 border-b dark:border-gray-800" id="mobileMenu">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#home" class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">Home</a>
+                <a href="#about" class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">About</a>
+                <a href="#experience" class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">Experience</a>
+                <a href="#projects" class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">Projects</a>
+                <a href="#skills" class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">Skills</a>
+                <a href="#contact" class="block px-3 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+<!-- ================= HERO SECTION ================= -->
+<section
+id="home"
+class="relative min-h-screen flex items-center justify-center overflow-hidden py-12">
+
+    <!-- Gradient Mesh -->
+    <div class="absolute inset-0 hero-gradient"></div>
+
+    <!-- Mouse Glow -->
+    <div id="mouseGlow"></div>
+
+    <!-- Existing Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full relative z-20">
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+            <!-- ================= LEFT CONTENT ================= -->
+
+            <div class="fade-in">
+
+
+                <h2
+                    class="text-5xl md:text-7xl font-extrabold leading-tight mb-5">
+
+                    Building
+                    <span class="gradient-text">
+                        software applications
+                    </span>
+
+                    with React,
+                    Node.js & AI.
+
+                </h2>
+
+                <p
+                    class="text-lg md:text-xl text-gray-400 leading-relaxed max-w-2xl mb-6">
+
+                    I transform ideas into fast,
+                    responsive and production-ready products
+                    using modern frontend and backend technologies.
+
+                </p>
+
+                <div
+                    class="grid grid-cols-2 gap-4 mt-6 mb-6">
+
+                    <div class="hero-highlight">
+
+                        ✔ 4+ Projects
+
+                    </div>
+
+                    <div class="hero-highlight">
+
+                        ✔ Software Developer
+
+                    </div>
+
+                    <div class="hero-highlight">
+
+                        ✔ Open to Work
+
+                    </div>
+
+                    <div class="hero-highlight">
+
+                        ✔ Assam, India
+
+                    </div>
+
+                </div>
+
+                <!-- Buttons -->
+
+                <div class="flex flex-wrap gap-5">
+
+                    <a href="#projects"
+                        class="hero-btn-primary">
+
+                        View Projects
+
+                    </a>
+
+                    <a href="assets/resu.pdf"
+                        download
+                        class="hero-btn-secondary">
+
+                        <i class="fas fa-download mr-2"></i>
+
+                        Download Resume
+
+                    </a>
+
+                </div>
+
+                <!-- Social -->
+
+                <div class="flex gap-6 mt-6">
+
+                    <a
+                        href="https://linkedin.com/in/gouranga-kalita-6431bb239"
+                        target="_blank"
+                        class="hero-social">
+
+                        <i class="fab fa-linkedin"></i>
+
+                    </a>
+
+                    <a
+                        href="https://github.com/Gouranga123456789"
+                        target="_blank"
+                        class="hero-social">
+
+                        <i class="fab fa-github"></i>
+
+                    </a>
+                    <a
+                        href="https://leetcode.com/u/Gouranga_Kalita/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hero-social"
+                        aria-label="LeetCode"
+                    >
+                        <img
+                            src="https://cdn.simpleicons.org/leetcode/ffffff"
+                            alt="LeetCode"
+                            class="leetcode-icon"
+                        >
+                    </a>
+
+                    <a
+                        href="https://www.credly.com/users/gouranga-kalita"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hero-social"
+                        aria-label="Credly"
+                    >
+                        <img
+                            src="https://cdn.simpleicons.org/credly/ffffff"
+                            alt="Credly"
+                            class="credly-icon"
+                        >
+                    </a>
+
+                    <a
+                        href="mailto:gourangakalita17@gmail.com"
+                        class="hero-social">
+
+                        <i class="fas fa-envelope"></i>
+
+                    </a>
+
+                    <a
+                        href="tel:+917086383831"
+                        class="hero-social">
+
+                        <i class="fas fa-phone"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- ================= RIGHT CONTENT ================= -->
+
+            <div class="fade-in">
+
+    <!-- Profile -->
+
+    <div class="flex justify-center mb-5">
+
+        <div class="hero-right">
+
+    <div class="window-header">
+
+    <span class="red"></span>
+
+    <span class="yellow"></span>
+
+    <span class="green"></span>
+
+</div>
+
+<img
+src="assets/code-bg.png"
+class="code-background">
+
+    <div class="hero-image-glow"></div>
+
+    <img
+        src="assets/PASSPHOTO.jpg"
+        class="hero-image"
+        alt="Gouranga Kalita">
+
+</div>
+
+    </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text fade-in">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl transform rotate-6"></div>
+                        <div class="relative bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-2xl">
+                            <h3 class="text-2xl font-bold mb-4">Education</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="font-semibold text-lg">B.Tech in Computer Science</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Assam University • 2021 - 2025</p>
+                                    <p class="text-blue-500">CGPA: 7.34/10</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Senior Secondary (XII)</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">S.K. Hazarika Senior Secondary School</p>
+                                    <p class="text-blue-500">87.40%</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Higher Secondary (X)</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">St. Vivekananda English Academy</p>
+                                    <p class="text-blue-500">88.16%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                        A passionate B.Tech graduate in Computer Science and Engineering with a solid foundation in web development and emerging technologies. I specialize in creating responsive, user-centric web applications that combine aesthetics with functionality.
+                    </p>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                        My expertise spans across modern web technologies including React, PHP, MySQL, and various frontend frameworks. I'm constantly exploring new tools and methodologies to deliver scalable and efficient solutions.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-green-500 bg-opacity-20 text-green-500 rounded-full text-sm font-semibold">Web Development</span>
+                        <span class="px-4 py-2 bg-blue-500 bg-opacity-20 text-blue-500 rounded-full text-sm font-semibold">C++</span>
+                        <span class="px-4 py-2 bg-pink-500 bg-opacity-20 text-pink-500 rounded-full text-sm font-semibold">Python</span>
+                        <span class="px-4 py-2 bg-violet-500 bg-opacity-20 text-violet-500 rounded-full text-sm font-semibold">Java</span>
+                        <span class="px-4 py-2 bg-orange-500 bg-opacity-20 text-orange-500 rounded-full text-sm font-semibold">MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ==========================================================
+                    EXPERIENCE SECTION
+========================================================== -->
+
+<section id="experience" class="experience-section">
+
+    <div class="container">
+
+        <div class="section-heading fade-in">
+
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text fade-in">Professional Journey</h2>
+
+            <h2>
+                Experience that helped me become a
+                <span class="gradient-text">
+                    Full Stack Developer
+                </span>
+            </h2>
+
+            <p>
+                My internships provided real-world exposure to
+                full stack development, collaboration,
+                and scalable software engineering.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-card fade-in">
+
+
+                <div class="timeline-year">
+                    2024
+                </div>
+
+                <div class="timeline-line">
+
+                    <div class="timeline-circle"></div>
+
+                </div>
+
+                <div class="experience-card">
+
+                    <div class="company-header">
+
+                        <div class="company-info">
+
+                            <img
+                                src="assets/mainflow.jpg"
+                                alt="Main Flow Services logo"
+                                class="company-logo"
+                            >
+
+                            <div>
+
+                                <h3>
+                                    🚀 Full Stack Developer Intern
+                                </h3>
+
+                                <h4>
+                                    Main Flow Services &amp;
+                                    Technologies Pvt. Ltd.
+                                </h4>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="duration">
+                            Jun 2024 – Aug 2024
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="experience-tech">
+
+                        <span>React</span>
+
+                        <span>PHP</span>
+
+                        <span>MySQL</span>
+
+                        <span>Tailwind CSS</span>
+
+                        <span>Git</span>
+
+                    </div>
+
+
+                    <ul class="experience-achievements">
+
+                        <li>
+                            Developed a responsive Cat Blog Platform
+                        </li>
+
+                        <li>
+                            Implemented a secure Authentication System
+                        </li>
+
+                        <li>
+                            Built a functional Calculator Application
+                        </li>
+
+                        <li>
+                            Created a responsive To-do List Application
+                        </li>
+
+                        <li>
+                            Optimized responsive UI/UX across devices
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-card fade-in">
+
+
+                <div class="timeline-year">
+                    2023
+                </div>
+
+
+                <div class="timeline-line">
+
+                    <div class="timeline-circle"></div>
+
+                </div>
+
+
+                <div class="experience-card">
+
+
+                    <div class="company-header">
+
+                        <div class="company-info">
+
+                            <img
+                                src="assets/nblik.png"
+                                alt="Nblik logo"
+                                class="company-logo"
+                            >
+
+                            <div>
+
+                                <h3>
+                                    ⚡ Operations Intern
+                                </h3>
+
+                                <h4>
+                                    Nblik
+                                </h4>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="duration">
+                            Mar 2023
+                        </span>
+
+                    </div>
+
+
+                    <div class="experience-tech">
+
+                        <span>Community</span>
+
+                        <span>Growth</span>
+
+                        <span>Operations</span>
+
+                    </div>
+
+
+                    <ul class="experience-achievements">
+
+                        <li>
+                            Generated 200+ new registrations
+                        </li>
+
+                        <li>
+                            Improved Monthly Active Users by 12%
+                        </li>
+
+                        <li>
+                            Boosted platform engagement by 21%
+                        </li>
+
+                        <li>
+                            Collaborated with cross-functional teams
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text fade-in">Featured Projects</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="fade-in card-3d project-card bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl shine-effect">
+                    <a
+                        href="https://mernify-kart.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="block h-full hover:no-underline"
+                    >
+                        <div class="project-image-wrapper">
+                            <img
+                                src="assets/mernify-kart-home.png"
+                                alt="MERNify-Kart e-commerce homepage"
+                                class="project-image"
+                            >
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">MERNify-Kart</h3>
+                            <p class="text-gray-700 dark:text-gray-300 mb-6">
+                                A full-stack e-commerce platform featuring global state management, secure JWT authentication, and dynamic checkout flow. Built and deployed using Vercel and Render.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">MongoDB</span>
+                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">Express</span>
+                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">React</span>
+                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm">Node.js</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="fade-in card-3d project-card bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl shine-effect">
+                    <a
+                        href="https://cats-blog.lovestoblog.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="block h-full hover:no-underline"
+                    >
+                        <div class="project-image-wrapper">
+                            <img
+                                src="assets/cats-blog-home.png"
+                                alt="MERNify-Kart e-commerce homepage"
+                                class="project-image"
+                            >
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Cat Blogs Website</h3>
+                            <p class="text-gray-700 dark:text-gray-300 mb-6">
+                                A responsive single-page application with secure authentication for user registration and post creation. Developed using React (Vite), Tailwind CSS, PHP, and MySQL.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+
+                                <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300 rounded-full text-sm">
+                                    React
+                                </span>
+
+                                <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300 rounded-full text-sm">
+                                    Tailwind CSS
+                                </span>
+
+                                <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300 rounded-full text-sm">
+                                    PHP
+                                </span>
+
+                                <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-300 rounded-full text-sm">
+                                    MySQL
+                                </span>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="fade-in card-3d bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl shine-effect">
+                    <div class="project-image-wrapper">
+                            <img
+                                src="assets/smart-energy-circuit.png"
+                                alt="MERNify-Kart e-commerce homepage"
+                                class="project-image"
+                            >
+                        </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Building Energy Management</h3>
+                        <p class="text-gray-700 dark:text-gray-300 mb-6">
+                             IoT prototype using IR, LDR, and DHT11 sensors with ESP8266 microcontroller. Integrated ML models to track and predict energy consumption patterns.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">IoT</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">Machine Learning</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">ESP8266</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm">Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+                        SKILLS SECTION
+    ========================================================== -->
+
+    <section id="skills" class="skills-section">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="section-heading fade-in">
+
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text fade-in">Technical Skills</h2>
+
+                <h2>
+                    Technologies I use to
+                    <span class="gradient-text">
+                        build products
+                    </span>
+                </h2>
+
+                <p>
+                    A practical full-stack skill set covering frontend,
+                    backend, databases, cloud technologies, and AI/ML.
+                </p>
+
+            </div>
+
+
+            <div class="core-stack fade-in">
+
+                <div class="core-stack-header">
+
+                    <div>
+
+                        <span class="core-stack-label">
+                            CORE STACK
+                        </span>
+
+                        <h3>
+                            My primary development toolkit
+                        </h3>
+
+                    </div>
+
+                    <span class="core-stack-status">
+                        <span class="status-dot"></span>
+                        Open to Work
+                    </span>
+
+                </div>
+
+
+                <div class="core-stack-items">
+
+                    <div class="core-tech">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+
+                    <div class="core-tech">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+
+                    <div class="core-tech">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="core-tech">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                    </div>
+
+                    <div class="core-tech">
+                        <i class="fab fa-php"></i>
+                        <span>PHP</span>
+                    </div>
+
+                    <div class="core-tech">
+                        <i class="fas fa-database"></i>
+                        <span>MySQL</span>
+                    </div>
+
+                    <div class="core-tech">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+
+                    <div class="core-tech">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="skills-grid">
+
+
+                <div class="skill-category fade-in">
+
+                    <div class="skill-category-header">
+
+                        <div class="skill-icon frontend-icon">
+
+                            <i class="fas fa-laptop-code"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Frontend Development
+                            </h3>
+
+                            <p>
+                                Interfaces &amp; user experience
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-list">
+
+                        <div class="skill-item">
+
+                            <div class="skill-item-info">
+
+                                <span>
+                                    <i class="fab fa-html5"></i>
+                                    HTML5
+                                </span>
+
+                                <small>Advanced</small>
+
+                            </div>
+
+                            <div class="skill-level">
+                                <span style="width: 90%;"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <div class="skill-item-info">
+
+                                <span>
+                                    <i class="fab fa-css3-alt"></i>
+                                    CSS3
+                                </span>
+
+                                <small>Advanced</small>
+
+                            </div>
+
+                            <div class="skill-level">
+                                <span style="width: 88%;"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <div class="skill-item-info">
+
+                                <span>
+                                    <i class="fab fa-js"></i>
+                                    JavaScript
+                                </span>
+
+                                <small>Advanced</small>
+
+                            </div>
+
+                            <div class="skill-level">
+                                <span style="width: 85%;"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <div class="skill-item-info">
+
+                                <span>
+                                    <i class="fab fa-react"></i>
+                                    React
+                                </span>
+
+                                <small>Advanced</small>
+
+                            </div>
+
+                            <div class="skill-level">
+                                <span style="width: 85%;"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <div class="skill-item-info">
+
+                                <span>
+                                    <i class="fas fa-wind"></i>
+                                    Tailwind CSS
+                                </span>
+
+                                <small>Advanced</small>
+
+                            </div>
+
+                            <div class="skill-level">
+                                <span style="width: 85%;"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-category fade-in">
+
+                    <div class="skill-category-header">
+
+                        <div class="skill-icon backend-icon">
+
+                            <i class="fas fa-server"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Backend Development
+                            </h3>
+
+                            <p>
+                                APIs &amp; server-side logic
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-list">
+
+                        <div class="skill-item">
+
+                            <div class="skill-item-info">
+
+                                <span>
+                                    <i class="fab fa-node-js"></i>
+                                    Node.js
+                                </span>
+
+                                <small>Intermediate</small>
+
+                            </div>
+
+                            <div class="skill-level">
+                                <span style="width: 78%;"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <div class="skill-item-info">
+
+                                <span>
+                                    <i class="fas fa-code"></i>
+                                    Express.js
+                                </span>
+
+                                <small>Intermediate</small>
+
+                            </div>
+
+                            <div class="skill-level">
+                                <span style="width: 78%;"></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-item">
+
+                            <div class="skill-item-info">
+
+                                <span>
+                                    <i class="fab fa-php"></i>
+                                    PHP
+                                </span>
+
+                                <small>Intermediate</small>
+
+                            </div>
+
+                            <div class="skill-level">
+                                <span style="width: 75%;"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-category fade-in">
+
+                    <div class="skill-category-header">
+
+                        <div class="skill-icon database-icon">
+
+                            <i class="fas fa-database"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Database and Server
+                            </h3>
+
+                            <p>
+                                Data &amp; persistence
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-chips">
+
+                        <span>
+                            <i class="fas fa-database"></i>
+                            MySQL
+                        </span>
+
+                        <span>
+                            <i class="fas fa-database"></i>
+                            MongoDB
+                        </span>
+
+                        <span>
+                            <i class="fas fa-database"></i>
+                            Apache
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-category fade-in">
+
+                    <div class="skill-category-header">
+
+                        <div class="skill-icon ai-icon">
+
+                            <i class="fas fa-brain"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                AI &amp; Machine Learning
+                            </h3>
+
+                            <p>
+                                Intelligent applications
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-chips">
+
+                        <span>
+                            <i class="fab fa-python"></i>
+                            Python
+                        </span>
+
+                        <span>
+                            <i class="fas fa-robot"></i>
+                            TensorFlow
+                        </span>
+
+                        <span>
+                            <i class="fas fa-chart-line"></i>
+                            XGBoost
+                        </span>
+
+                        <span>
+                            <i class="fas fa-network-wired"></i>
+                            Decision Tree
+                        </span>
+
+                        <span>
+                            <i class="fas fa-dna"></i>
+                            Random Forest
+                        </span>
+
+                        <span>
+                            <i class="fas fa-microchip"></i>
+                            IoT + ML
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-category fade-in">
+
+                    <div class="skill-category-header">
+
+                        <div class="skill-icon tools-icon">
+
+                            <i class="fas fa-tools"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Tools &amp; Workflow
+                            </h3>
+
+                            <p>
+                                Development &amp; collaboration
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-chips">
+
+                        <span>
+                            <i class="fab fa-git-alt"></i>
+                            Git
+                        </span>
+
+                        <span>
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </span>
+
+                        <span>
+                            <i class="fas fa-code"></i>
+                            VS Code
+                        </span>
+
+                        <span>
+                            <i class="fas fa-paper-plane"></i>
+                            Postman
+                        </span>
+
+                        <span>
+                            <i class="fas fa-flask"></i>
+                            Jupyter
+                        </span>
+
+                        <span>
+                            <i class="fas fa-code"></i>
+                            Arduino IDE
+                        </span>
+
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text fade-in">Get In Touch</h2>
+            <div class="fade-in card-3d bg-white dark:bg-gray-800 rounded-2xl p-6 md:p-8 shadow-2xl">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+                    <div class="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-900 rounded-xl min-w-0">
+                        <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-white"></i>
+                        </div>
+                        <div class="truncate">
+                            <p class="font-semibold text-sm">Email</p>
+                            <p class="text-xs text-gray-400 truncate">gourangakalita17@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 p-4 bg-gray-50 dark:bg-gray-900 rounded-xl">
+                        <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-sm">Phone</p>
+                            <p class="text-xs text-gray-400">+91 7086383831</p>
+                        </div>
+                    </div>
+                    </div>
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <input type="text" class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-700 rounded-lg" placeholder="Your Name">
+                        <input type="email" class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-700 rounded-lg" placeholder="Email">
+                    </div>
+                    <textarea rows="4" class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-700 rounded-lg" placeholder="Message"></textarea>
+                    <button type="submit" class="w-full py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-bold">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-2xl font-bold gradient-text">Gouranga Kalita</h3>
+                    <p class="text-gray-400 mt-2">Full Stack Developer & Tech Enthusiast</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://linkedin.com/in/gouranga-kalita-6431bb239" target="_blank" class="text-2xl hover:text-blue-500 transform hover:scale-125 transition-all duration-300">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Gouranga123456789" target="_blank" class="text-2xl hover:text-blue-500 transform hover:scale-125 transition-all duration-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:gourangakalita17@gmail.com" class="text-2xl hover:text-blue-500 transform hover:scale-125 transition-all duration-300">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Gouranga Kalita. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+     <script src="script.js"></script>
+</body>
+</html>
