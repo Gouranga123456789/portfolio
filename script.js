@@ -24,7 +24,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let particlesArray = [];
-const numberOfParticles = 80;
+const numberOfParticles = 20;
 
 class Particle {
     constructor() {
@@ -220,3 +220,33 @@ experienceCards.forEach(card=>{
 
 });
 
+function openCertModal(filePath, title) {
+        const modal = document.getElementById('certModal');
+        const viewer = document.getElementById('certViewer');
+        const modalTitle = document.getElementById('modalTitle');
+        
+        modalTitle.textContent = title;
+        viewer.src = filePath;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function forceCloseModal() {
+        const modal = document.getElementById('certModal');
+        const viewer = document.getElementById('certViewer');
+        
+        modal.classList.remove('active');
+        viewer.src = '';
+        document.body.style.overflow = 'auto';
+    }
+
+    function closeCertModal(event) {
+        if (event.target.id === 'certModal') {
+            forceCloseModal();
+        }
+    }
+
+    // Close on Escape Key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') forceCloseModal();
+    });
