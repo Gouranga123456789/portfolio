@@ -250,3 +250,14 @@ function openCertModal(filePath, title) {
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') forceCloseModal();
     });
+    // Dynamic contact card hover feedback or analytics handler
+document.addEventListener('DOMContentLoaded', () => {
+    const contactBtns = document.querySelectorAll('.contact-btn');
+    
+    contactBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const targetType = e.currentTarget.getAttribute('href');
+            console.log(`Contact channel accessed: ${targetType}`);
+        });
+    });
+});
